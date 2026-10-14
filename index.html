@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Program - School Presidency</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 3px solid #dc2626;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #dc2626;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .slogan {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-style: italic;
+            margin-top: 15px;
+        }
+
+        .vision-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            padding: 30px;
+            border-left: 5px solid #dc2626;
+            margin-bottom: 50px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .vision-section h2 {
+            color: #dc2626;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .vision-text {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        .initiatives {
+            margin-top: 50px;
+        }
+
+        .initiatives h2 {
+            color: #dc2626;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .initiative {
+            background-color: #111111;
+            border: 2px solid #dc2626;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .initiative:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+        }
+
+        .initiative h3 {
+            color: #dc2626;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .initiative-number {
+            background-color: #dc2626;
+            color: #000;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .initiative p {
+            color: #cccccc;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #333;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .slogan {
+                font-size: 1.2rem;
+            }
+            
+            .initiative h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Campaign Program</h1>
+            <p class="slogan">"Making school memorable and meaningful"</p>
+        </header>
+
+        <section class="vision-section">
+            <h2>Our Vision</h2>
+            <p class="vision-text">
+                To create a fun yet beneficial school environment that may bring opportunities for students in the future.
+            </p>
+        </section>
+
+        <section class="initiatives">
+            <h2>Key Initiatives</h2>
+            
+            <div class="initiative">
+                <h3><span class="initiative-number">1</span>Islamic Events</h3>
+                <p>
+                    Such as the qiyam that was done last year where we spend a fun yet beneficial time together in school. 
+                    This benefits the students by making them knowledgeable in their religion in a fun way.
+                </p>
+            </div>
+
+            <div class="initiative">
+                <h3><span class="initiative-number">2</span>Student Competitions</h3>
+                <p>
+                    Such as a science fair, art competitions, mathematics related competitions. 
+                    This benefits the students by giving them required skills and experience for their future.
+                </p>
+            </div>
+
+            <div class="initiative">
+                <h3><span class="initiative-number">3</span>Social Events</h3>
+                <p>
+                    Social events such as merchants day, talent show, and culture day. 
+                    Such events benefit the students by teaching them business skills and various other skills.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 School Presidency Campaign</p>
+        </footer>
+    </div>
+</body>
+</html>
