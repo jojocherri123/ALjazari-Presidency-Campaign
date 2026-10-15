@@ -3,190 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campaign Program - School Presidency</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 0 40px;
-            border-bottom: 3px solid #dc2626;
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #dc2626;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .slogan {
-            font-size: 1.5rem;
-            color: #ffffff;
-            font-style: italic;
-            margin-top: 15px;
-        }
-
-        .vision-section {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-            padding: 30px;
-            border-left: 5px solid #dc2626;
-            margin-bottom: 50px;
-            border-radius: 0 10px 10px 0;
-        }
-
-        .vision-section h2 {
-            color: #dc2626;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-        }
-
-        .vision-text {
-            font-size: 1.1rem;
-            color: #e0e0e0;
-        }
-
-        .initiatives {
-            margin-top: 50px;
-        }
-
-        .initiatives h2 {
-            color: #dc2626;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .initiative {
-            background-color: #111111;
-            border: 2px solid #dc2626;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .initiative:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
-        }
-
-        .initiative h3 {
-            color: #dc2626;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        .initiative-number {
-            background-color: #dc2626;
-            color: #000;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-
-        .initiative p {
-            color: #cccccc;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 2px solid #333;
-            color: #666;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .slogan {
-                font-size: 1.2rem;
-            }
-            
-            .initiative h3 {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
+    <title>Student Council Presidency Program - Jamil</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
+    <canvas id="particleCanvas"></canvas>
+
     <div class="container">
         <header>
-            <h1>Campaign Program</h1>
-            <p class="slogan">"Making school memorable and meaningful"</p>
+            <h1>Student Council Presidency Program</h1>
+            <p class="slogan">"Making School Memorable and Meaningful"</p>
         </header>
 
         <section class="vision-section">
             <h2>Our Vision</h2>
             <p class="vision-text">
-                To create a fun yet beneficial school environment that may bring opportunities for students in the future.
+                To create a fun yet beneficial school environment that brings tangible opportunities for all students, preparing us for the future while building an inclusive, active school community.
             </p>
+            <div class="pillars-grid">
+                <div class="pillar">Knowledge & Academic Growth</div>
+                <div class="pillar">Technology Innovation & Skill</div>
+                <div class="pillar">Character, Spiritual & Ethics</div>
+                <div class="pillar">Community, Unity & Leadership</div>
+            </div>
         </section>
+
+        <!-- Trigger Zone 1 for Particles -->
+        <div id="trigger-zone-1" class="trigger-zone"></div>
 
         <section class="initiatives">
-            <h2>Key Initiatives</h2>
+            <h2>Core Election Initiatives</h2>
             
             <div class="initiative">
-                <h3><span class="initiative-number">1</span>Islamic Events</h3>
-                <p>
-                    Such as the qiyam that was done last year where we spend a fun yet beneficial time together in school. 
-                    This benefits the students by making them knowledgeable in their religion in a fun way.
-                </p>
+                <h3><span class="initiative-number">1</span> Islamic & Cultural Events</h3>
+                <p class="initiative-pillars"><strong>Pillars:</strong> Character & Community</p>
+                <p class="initiative-goal"><strong>Goal:</strong> Reinforce our shared values through memorable, well-organized spiritual and cultural experiences. Building on the success of past events like the annual Qiyam night, we will create structured yet engaging gatherings where students bond, gain religious knowledge, and build strong character in a fun, supportive setting.</p>
+                <h4>Concrete Promises:</h4>
+                <ul class="promise-list">
+                    <li>Organize two annual overnight Qiyam & Youth Reflection Nights with structured group activities and discussion circles.</li>
+                    <li>Host interactive faith-based trivia competitions with student recognition and awards.</li>
+                    <li>Ensure all religious events are planned transparently without interrupting academic preparation.</li>
+                </ul>
             </div>
 
             <div class="initiative">
-                <h3><span class="initiative-number">2</span>Student Competitions</h3>
-                <p>
-                    Such as a science fair, art competitions, mathematics related competitions. 
-                    This benefits the students by giving them required skills and experience for their future.
-                </p>
+                <h3><span class="initiative-number">2</span> Student Competitions & Academic Showcases</h3>
+                <p class="initiative-pillars"><strong>Pillars:</strong> Knowledge & Technology</p>
+                <p class="initiative-goal"><strong>Goal:</strong> Elevate student talent through competitive academic and creative platforms. By hosting structured events in science, mathematics, and the arts, we will help students build real-world skills, strengthen their college portfolios, and earn recognition for their unique abilities.</p>
+                <h4>Concrete Promises:</h4>
+                <ul class="promise-list">
+                    <li>Relaunch the Annual STEM & Innovation Fair, featuring student-led tech projects and robotics.</li>
+                    <li>Establish an inter-grade Mathematics & Logic Challenge with peer mentoring.</li>
+                    <li>Create an Arts & Digital Design Exhibition showcasing student visual media and creative writing.</li>
+                </ul>
             </div>
 
             <div class="initiative">
-                <h3><span class="initiative-number">3</span>Social Events</h3>
-                <p>
-                    Social events such as merchants day, talent show, and culture day. 
-                    Such events benefit the students by teaching them business skills and various other skills.
-                </p>
+                <h3><span class="initiative-number">3</span> Entrepreneurship & Social Events</h3>
+                <p class="initiative-pillars"><strong>Pillars:</strong> Community & Life Skills</p>
+                <p class="initiative-goal"><strong>Goal:</strong> Create dynamic social platforms that teach real-world practical skills while bringing energy to campus life. Events like Merchants Day, student talent showcases, and cultural exchange days will give students hands-on business experience, financial literacy, and memorable collaborative moments.</p>
+                <h4>Concrete Promises:</h4>
+                <ul class="promise-list">
+                    <li>Host an expanded Student Merchants Day where student entrepreneurs and clubs design, market, and operate real stalls.</li>
+                    <li>Organize an annual Campus Talent & Culture Day celebrating diverse backgrounds and artistic skills.</li>
+                    <li>Establish a transparent budgeting workshop so student stall leaders learn practical profit/cost management.</li>
+                </ul>
             </div>
         </section>
 
+        <section class="commitment-section">
+            <h2>Our Commitment to Feasibility</h2>
+            <p>Every promise in this platform is vetted for realistic scheduling, budget feasibility, and maximum student participation. We focus on <strong>quality execution</strong> rather than unachievable promises.</p>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Action Plan & Implementation Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-quarter">First Quarter</div>
+                    <div class="timeline-content">
+                        <h4>Planning Committee Setup & Qiyam Night Launch</h4>
+                        <p>High participation & spiritual engagement</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-quarter">Second Quarter</div>
+                    <div class="timeline-content">
+                        <h4>Annual STEM & Mathematics Competition</h4>
+                        <p>Academic recognition & project awards</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-quarter">Third Quarter</div>
+                    <div class="timeline-content">
+                        <h4>Merchants Day & Business Workshop</h4>
+                        <p>Practical life skills & club fundraising</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-quarter">Fourth Quarter</div>
+                    <div class="timeline-content">
+                        <h4>Arts Showcase, Talent Night & Culture Day</h4>
+                        <p>Community celebration & year-end unity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-vote-section">
+            <h2>Why Vote For This Program?</h2>
+            <div class="why-vote-grid">
+                <div class="vote-card">
+                    <h4>⚖️ Balanced Approach</h4>
+                    <p>Combines fun social events with meaningful skill-building for your future.</p>
+                </div>
+                <div class="vote-card">
+                    <h4>🤝 Inclusive Design</h4>
+                    <p>Provides opportunities whether your interest is in science, art, business, or faith.</p>
+                </div>
+                <div class="vote-card">
+                    <h4>🎯 Accountability</h4>
+                    <p>Clear milestones ensure every initiative is delivered on time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trigger Zone 2 for Particles -->
+        <div id="trigger-zone-2" class="trigger-zone"></div>
+
         <footer>
-            <p>&copy; 2026 School Presidency Campaign</p>
+            <h3 class="footer-slogan">YOUR VOICE. YOUR FUTURE. YOUR PRESIDENCY.</h3>
+            <p>Together, let's make this school year memorable and meaningful.</p>
+            <p class="copyright">&copy; 2026 Student Council Presidency Campaign</p>
         </footer>
     </div>
+
+    <script src="particles.js"></script>
 </body>
 </html>
